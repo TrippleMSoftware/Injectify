@@ -29,7 +29,7 @@ color: purple;
 <div style=position:absolute;top:0;left:0;height:18%;width:100%></div>
 <button style="position:absolute;top:0;right:0;padding:2px 5px 2px">X</button><br>
 <a style=position:absolute;font-size:20px>Injectify v0.1 ScriptHub - TrippleMSoftware</a><br><br><br>
-<p class="script" onclick="setInterval(function() { alert("alert blocker loaded");alert = function() { console.log("alert blocked!") } alert("test");}, 100);">Alert Blocker</p>
+<p class="script" onclick="setInterval(function() { alert = function() { console.log("alert blocked!") } }, 100);">Alert Blocker</p>
 <p class="script" onclick="window.parent.window.location.replace('https://classroom.google.com/');">Hide current site from history</p>
 <div id=jsi-output style=font-family:monospace;margin-top:1em></div>
 </div>
